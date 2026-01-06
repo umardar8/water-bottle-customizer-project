@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { PiWhatsappLogoFill } from "react-icons/pi";
+import { PiWhatsappLogoFill, PiUserCircle } from "react-icons/pi";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +27,7 @@ const Navbar = () => {
           {/* 2. Desktop Menu */}
           <div className="hidden md:flex space-x-6 items-center">
             {/* Logic: If on Home, scroll to section. If not, go to Home/#section */}
-            <a href={isHomePage ? "#features" : "/#features"} className="text-gray-500 hover:text-brand-blue transition">Features</a>
+            <Link to="/" className="text-gray-500 hover:text-brand-blue transition">Home</Link>
             <a href={isHomePage ? "#gallery" : "/#gallery"} className="text-gray-500 hover:text-brand-blue transition">Gallery</a>
             
             <Link to="/pricing" className={getLinkClass('/pricing')}>Pricing</Link>
@@ -37,22 +37,14 @@ const Navbar = () => {
 
           {/* 3. Right Side Buttons (Desktop) */}
           <div className="hidden md:flex items-center gap-4">
-            
-            {/* Login / Signup */}
-            <Link 
-              to="/login" 
-              className="px-5 py-2 rounded-full border border-gray-300 text-gray-700 font-semibold hover:border-brand-blue hover:text-brand-blue transition"
-            >
-              Login / Signup
-            </Link>
 
             {/* Start Designing */}
-            <Link 
+            {location.pathname != '/design' && <Link 
               to="/design" 
               className="bg-brand-blue text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition shadow-lg transform hover:scale-105 duration-200"
             >
               Start Designing
-            </Link>
+            </Link>}
 
             {/* WhatsApp */}
             <a 
@@ -64,6 +56,15 @@ const Navbar = () => {
             >
               <PiWhatsappLogoFill size={'2.4rem'} />
             </a>
+
+            {/* Login / Signup */}
+            <Link 
+              to="/login" 
+              className="text-gray-500 hover:text-brand-blue transition transform hover:scale-110"
+              title="Login / Signup"
+            >
+              <PiUserCircle size={'2.4rem'} />
+            </Link>
           </div>
 
           {/* 4. Mobile Menu Button (Hamburger) */}

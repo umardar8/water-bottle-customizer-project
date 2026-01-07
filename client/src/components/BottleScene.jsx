@@ -34,7 +34,7 @@ const RealisticBottle = ({ textureData, capColor }) => {
   }, []);
 
   const texture = useMemo(() => 
-    new THREE.TextureLoader().load(textureData || '/src/assets/sampleLabels/sampleLabel1.png'),
+    new THREE.TextureLoader().load(textureData || 'public/images/sampleLabels/sampleLabel1.png'),
   [textureData]);
   
   texture.wrapS = THREE.RepeatWrapping;

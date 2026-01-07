@@ -7,10 +7,10 @@ const LandingPage = () => {
 
     // Mock Data for the Gallery
   const portfolioItems = [
-    { id: 1, brand: "Roti Palace", type: "Restaurant", img: "/src/assets/sampleBottles/sampleBottle1.png", imgHover: "/src/assets/sampleBottles/sampleBottle1Hover.png" },
-    { id: 2, brand: "Ahmed's Walima", type: "Wedding Event", img: "/src/assets/sampleBottles/sampleBottle2.png", imgHover: "/src/assets/sampleBottles/sampleBottle2Hover.png" },
-    { id: 3, brand: "Gym Fit", type: "Fitness", img: "/src/assets/sampleBottles/sampleBottle3.png", imgHover: "/src/assets/sampleBottles/sampleBottle3Hover.png" },
-    { id: 4, brand: "Jal the Band", type: "Concert Event", img: "/src/assets/sampleBottles/sampleBottle4.png", imgHover: "/src/assets/sampleBottles/sampleBottle4Hover.png" }
+    { id: 1, brand: "Roti Palace", type: "Restaurant", img: "/src/images/sampleBottles/sampleBottle1.png", imgHover: "/src/images/sampleBottles/sampleBottle1Hover.png" },
+    { id: 2, brand: "Ahmed's Walima", type: "Wedding Event", img: "/src/images/sampleBottles/sampleBottle2.png", imgHover: "/src/images/sampleBottles/sampleBottle2Hover.png" },
+    { id: 3, brand: "Gym Fit", type: "Fitness", img: "/src/images/sampleBottles/sampleBottle3.png", imgHover: "/src/images/sampleBottles/sampleBottle3Hover.png" },
+    { id: 4, brand: "Jal the Band", type: "Concert Event", img: "/src/images/sampleBottles/sampleBottle4.png", imgHover: "/src/images/sampleBottles/sampleBottle4Hover.png" }
   ];
 
   return (

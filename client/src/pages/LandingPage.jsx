@@ -2,15 +2,23 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import BottleScene from '../components/BottleScene';
+import SampleBottle1 from '../assets/images/sampleBottles/sampleBottle1.png'
+import SampleBottle1Hover from '../assets/images/sampleBottles/sampleBottle1Hover.png'
+import SampleBottle2 from '../assets/images/sampleBottles/sampleBottle2.png'
+import SampleBottle2Hover from '../assets/images/sampleBottles/sampleBottle2Hover.png'
+import SampleBottle3 from '../assets/images/sampleBottles/sampleBottle3.png'
+import SampleBottle3Hover from '../assets/images/sampleBottles/sampleBottle3Hover.png'
+import SampleBottle4 from '../assets/images/sampleBottles/sampleBottle4.png'
+import SampleBottle4Hover from '../assets/images/sampleBottles/sampleBottle4Hover.png'
 
 const LandingPage = () => {
 
     // Mock Data for the Gallery
   const portfolioItems = [
-    { id: 1, brand: "Roti Palace", type: "Restaurant", img: "public/images/sampleBottles/sampleBottle1.png", imgHover: "public/images/sampleBottles/sampleBottle1Hover.png" },
-    { id: 2, brand: "Ahmed's Walima", type: "Wedding Event", img: "public/images/sampleBottles/sampleBottle2.png", imgHover: "public/images/sampleBottles/sampleBottle2Hover.png" },
-    { id: 3, brand: "Gym Fit", type: "Fitness", img: "public/images/sampleBottles/sampleBottle3.png", imgHover: "public/images/sampleBottles/sampleBottle3Hover.png" },
-    { id: 4, brand: "Jal the Band", type: "Concert Event", img: "public/images/sampleBottles/sampleBottle4.png", imgHover: "public/images/sampleBottles/sampleBottle4Hover.png" }
+    { id: 1, brand: "Roti Palace", type: "Restaurant", img: SampleBottle1, imgHover: SampleBottle1Hover },
+    { id: 2, brand: "Ahmed's Walima", type: "Wedding Event", img: SampleBottle2, imgHover: SampleBottle2Hover },
+    { id: 3, brand: "Gym Fit", type: "Fitness", img: SampleBottle3, imgHover: SampleBottle3Hover },
+    { id: 4, brand: "Jal the Band", type: "Concert Event", img: SampleBottle4, imgHover: SampleBottle4Hover }
   ];
 
   return (

@@ -1,5 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import Founder1 from '../assets/images/founders/founder1.png';
+import Founder2 from '../assets/images/founders/founder2.jpg';
 
 const AboutUsPage = () => {
   return (
@@ -57,7 +59,7 @@ const AboutUsPage = () => {
             {/* Founder 1: Umar */}
             <div className="flex flex-col items-center text-center">
               <div className="w-48 h-48 bg-gray-200 rounded-full overflow-hidden mb-6 shadow-lg border-4 border-white">
-                 <img src='public/images/founders/founder1.png' alt="Umar Farooq Dar" className="w-full h-full object-cover" />
+                 <img src={Founder1} alt="Umar Farooq Dar" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900">Umar Farooq Dar</h3>
               <p className="text-brand-blue font-bold mb-3">Co-Founder & Software Engineer</p>
@@ -69,7 +71,7 @@ const AboutUsPage = () => {
             {/* Founder 2: Aqib */}
             <div className="flex flex-col items-center text-center">
               <div className="w-48 h-48 bg-gray-200 rounded-full overflow-hidden mb-6 shadow-lg border-4 border-white">
-                 <img src="public/images/founders/founder2.jpg" alt="Aqib Ali Gaho" className="w-full h-full object-cover" />
+                 <img src={Founder2} alt="Aqib Ali Gaho" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900">Aqib Ali Gaho</h3>
               <p className="text-brand-blue font-bold mb-3">Co-Founder & Software Engineer</p>

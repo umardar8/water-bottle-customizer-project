@@ -2,6 +2,7 @@ import React, { useMemo, useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, Environment } from '@react-three/drei';
 import * as THREE from 'three';
+import SampleLabel1 from '../assets/images/sampleLabels/sampleLabel1.png';
 
 const RealisticBottle = ({ textureData, capColor }) => {
   const meshRef = useRef();
@@ -34,7 +35,7 @@ const RealisticBottle = ({ textureData, capColor }) => {
   }, []);
 
   const texture = useMemo(() => 
-    new THREE.TextureLoader().load(textureData || 'public/images/sampleLabels/sampleLabel1.png'),
+    new THREE.TextureLoader().load(textureData || SampleLabel1),
   [textureData]);
   
   texture.wrapS = THREE.RepeatWrapping;

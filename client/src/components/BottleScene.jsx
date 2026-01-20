@@ -98,7 +98,7 @@ const BottleScene = ({ textureData, capColor = "#020f1b" }) => {
         <ambientLight intensity={0.8} />
         <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} intensity={1.5} castShadow />
         <pointLight position={[-10, -5, -10]} intensity={0.5} />
-        <Environment preset="warehouse" />
+        {/* <Environment preset="warehouse" /> */}
         {/* Pass the prop down */}
         <RealisticBottle textureData={textureData} capColor={capColor} />
         <OrbitControls enableZoom={true} minDistance={4} maxDistance={12} />

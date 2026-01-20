@@ -3,6 +3,7 @@ import axios from "axios"; // Uncomment if you have axios installed
 import LabelEditor from "../components/LabelEditor";
 import BottleScene from "../components/BottleScene";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const DesignTool = () => {
   // --- STATE MANAGEMENT ---
@@ -189,6 +190,7 @@ const DesignTool = () => {
 
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
